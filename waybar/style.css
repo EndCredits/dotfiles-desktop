@@ -1,0 +1,101 @@
+@import "latte.css";
+
+* {
+    border: none;
+    font-family: "CaskaydiaCove Nerd Font Mono";
+    font-size: 14px;
+}
+
+#waybar {
+    background-color: alpha(@base, 0.67);
+    min-height: 40px;
+    border-radius: 8px;
+}
+
+#window {
+    margin: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    transition: none;
+    color: @text;
+    background: @base;
+}
+
+#network,
+#pulseaudio,
+#battery,
+#backlight {
+    margin: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    transition: none;
+    background: @overlay1;
+    color: white;
+}
+
+#network:hover,
+#pulseaudio:hover,
+#battery:hover,
+#backlight:hover
+{
+    background: @overlay1;
+}
+
+#battery.charging, #battery.plugged {
+    color: white;
+}
+
+#battery.critical:not(.charging) {
+        animation-name: blink;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: @red;
+        color: @rosewater;
+    }
+}
+
+#clock {
+    margin: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    transition: none;
+    color: @subtext1;
+    background: @overlay0;
+}
+
+#memory { 
+    margin: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    transition: none;
+    color: @subtext2;
+    background: @overlay0;
+}
+#cpu {
+    margin: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    transition: none;
+    color: @subtext2;
+    background: @overlay0;
+}
+
+#tray {
+    margin: 6px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    transition: none;
+    background: @overlay0;
+}
