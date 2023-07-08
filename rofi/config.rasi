@@ -147,4 +147,5 @@ configuration {
       sorting-method:    "name";
   }
 }
-@theme "gruvbox-dark.rasi"
+//@theme "gruvbox-dark.rasi"
+@theme "/usr/share/rofi/themes/fancy.rasi"
