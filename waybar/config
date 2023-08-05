@@ -20,8 +20,8 @@
     },
     "network": {
         "tooltip": false,
-        "format-wifi": "  {essid}",
-        "format-ethernet": "  wired"
+        "format-wifi": " {essid}",
+        "format-ethernet": " wired"
     },
     "backlight": {
         "tooltip": false,
@@ -37,8 +37,8 @@
                     "critical": 20
             },
             "format": "{icon}  {capacity}%",
-            "format-charging": "  {capacity}%",
-            "format-plugged": "  {capacity}%",
+            "format-charging": " {capacity}%",
+            "format-plugged": " {capacity}%",
             "format-alt": "{time} {icon}",
             "format-icons": ["", "", "", "", ""]
     },
@@ -54,13 +54,13 @@
     },
     "cpu": {
         "interval": 15,
-        "format": "  {}%",
+        "format": " {}%",
         "max-length": 10,
         "on-click": "kitty htop"
     },
     "memory": {
-            "interval": 30,
-        "format": "  {}%",
+        "interval": 30,
+        "format": " {}%",
         "max-length": 10
     }
 }

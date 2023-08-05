@@ -2,14 +2,14 @@
 
 * {
     border: none;
-    font-family: "Zhudou Sans";
+    font-family: "CaskaydiaCove Nerd Font";
     font-size: 15px;
 }
 
 #waybar {
     background-color: alpha(@base, 0.67);
     min-height: 36px;
-    border-radius: 8px;
+    border-radius: 10px;
 }
 
 #window {
