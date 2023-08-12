@@ -42,7 +42,7 @@
 
 ## 💝 Thanks to
 
-- [laymoth](https://github.com/laymoth)
+- [armanslce](https://github.com/armanslce)
 
 &nbsp;
 
