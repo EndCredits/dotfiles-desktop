@@ -148,4 +148,4 @@ configuration {
   }
 }
 //@theme "gruvbox-dark.rasi"
-@theme "/usr/share/rofi/themes/fancy.rasi"
+@theme "./themes/material.rasi"
