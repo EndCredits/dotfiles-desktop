@@ -3,7 +3,9 @@
     "modules-left": ["custom/launcher","cpu","memory","tray","hyprland/window"],
     "modules-center": ["clock"],
     "modules-right": [ "backlight", "pulseaudio", "network", "battery","custom/power"],
-    "margin": 12,
+    "margin-top": 12,
+    "margin-left": 12,
+    "margin-right": 12,
     
     "pulseaudio": {
         "tooltip": false,
