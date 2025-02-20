@@ -30,10 +30,6 @@ window#waybar {
     padding: 0 8px;
 }
 
-.modules-center {
-    border-radius: 100px;
-}
-
 .modules-right {
     border-radius: 100px;
     padding: 0 8px;
@@ -127,7 +123,7 @@ window#waybar {
 #memory,
 #pulseaudio,
 #network {
-    color: @text;
+    color: @base;
     border: 1px;
     border-style: solid;
     border-color: @text;

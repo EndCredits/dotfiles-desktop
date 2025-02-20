@@ -2,10 +2,8 @@
     "layer": "top",
     "position": "top",
     "modules-left": [
+        "hyprland/workspaces",
         "hyprland/window"
-    ],
-    "modules-center": [
-        "hyprland/workspaces"
     ],
     "modules-right": [
         "tray",
