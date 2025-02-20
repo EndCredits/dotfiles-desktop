@@ -2,50 +2,101 @@
 
 * {
     border: none;
-    font-family: "CaskaydiaCove Nerd Font";
-    font-size: 15px;
+    font-family: "CodeNewRoman Nerd Font Mono";
+    font-size: 14px;
 }
 
 #waybar {
-    background-color: alpha(@base, 0.67);
-    min-height: 36px;
+    min-height: 38px;
     border-radius: 15px;
 }
 
 #window {
-    min-height: 24px;
-    margin: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
+    min-height: 38px;
+    padding: 0px 5px 0px 5px;
     border-radius: 20px;
     transition: none;
     color: @text;
-    background: @base;
 }
 
+window#waybar {
+    /* Large size for shorter side padding*/
+    /* border-radius: 100px */
+    background-color: transparent;
+}
+
+.modules-left {
+    border-radius: 100px;
+    padding: 0 8px;
+}
+
+.modules-center {
+    border-radius: 100px;
+}
+
+.modules-right {
+    border-radius: 100px;
+    padding: 0 8px;
+}
+
+#bluetooth,
+#clock,
+#cpu,
+#memory,
 #network,
 #pulseaudio,
-#battery,
-#backlight {
-    margin: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 20px;
-    transition: none;
-    background: @overlay1;
-    color: white;
+#tray,
+#mode,
+#workspaces {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px 6px 0px 6px;
+    background-color: transparent;
+
+    font-size: 16px;
 }
 
-#network:hover,
-#pulseaudio:hover,
-#battery:hover,
-#backlight:hover
-{
-    background: @overlay1;
+#workspaces {
+    color: rgba(18, 18, 18, 0.94);
+    /* border: rgba(255, 255, 255, 0.2) solid 2px; */
+    padding: 4px 12px;
+
+    transition-property: background, color, border;
+    transition-duration: 0.2s;
 }
 
-#battery.charging, #battery.plugged {
-    color: white;
+#workspaces button {
+    border-radius: 150px;
+    padding: 0px 0px;
+    background: transparent;
+    color: @base;
+    margin: 0 4px;
+    min-width: 24px;
+
+    transition-property: background, color, border, margin, padding;
+    transition-duration: 0.2s;
+}
+
+#workspaces button:hover {
+    /* background: rgba(255, 255, 255, 0.5); */
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#workspaces button.empty {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+#workspaces button.active {
+    /* background: #ffffff; */
+    color: #ffffff;
+    border-bottom: 3px solid #ffffff;
+    margin-bottom: 1px;
+    /* padding: 0 4px; */
+}
+
+#workspaces button.urgent {
+    color: #eb4d4b;
+    border-bottom: 3px solid #eb4d4b;
 }
 
 #battery.critical:not(.charging) {
@@ -63,40 +114,31 @@
     }
 }
 
-#clock {
-    margin: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 20px;
-    transition: none;
-    color: @subtext1;
-    background: @overlay0;
+#mode {
+    background-color: #64727D;
+    border-bottom: 3px solid #ffffff;
 }
 
-#memory { 
-    margin: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 20px;
-    transition: none;
-    color: @subtext2;
-    background: @overlay0;
-}
-#cpu {
-    margin: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 20px;
-    transition: none;
-    color: @subtext2;
-    background: @overlay0;
+#tray,
+#bluetooth,
+#battery,
+#clock,
+#cpu,
+#memory,
+#pulseaudio,
+#network {
+    color: @text;
+    border: 1px;
+    border-style: solid;
+    border-color: @text;
+    border-radius: 16px;
+    margin: 5px 3px 5px 3px;
 }
 
 #tray {
-    margin: 6px;
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 20px;
-    transition: none;
-    background: @overlay0;
+    color: transparent;
+}
+
+#window {
+    margin-left: 4px;
 }
