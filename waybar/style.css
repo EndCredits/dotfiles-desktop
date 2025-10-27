@@ -41,6 +41,7 @@ window#waybar {
 #memory,
 #network,
 #pulseaudio,
+#backlight,
 #tray,
 #mode,
 #workspaces {
@@ -122,6 +123,7 @@ window#waybar {
 #cpu,
 #memory,
 #pulseaudio,
+#backlight,
 #network {
     color: @base;
     border: 1px;

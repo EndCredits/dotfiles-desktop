@@ -8,6 +8,8 @@
     "modules-right": [
         "tray",
         "pulseaudio",
+        "backlight/slider",
+        "backlight",
         "network",
         "bluetooth",
         "memory",
@@ -143,5 +145,20 @@
             ""
         ],
         "max-length": 25
+    },
+    "backlight/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal",
+        "device": "intel_backlight"
+    },
+    "backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": [
+            "",
+            ""
+        ],
+        "on-scroll-up": "light -T 1.1",
+        "on-scroll-down": "light -T 0.9"
     }
 }
