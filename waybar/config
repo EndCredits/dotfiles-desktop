@@ -43,13 +43,6 @@
         "format": "\uf105 {initialTitle}",
         "separate-outputs": true
     },
-    "backlight": {
-        "tooltip": false,
-        "format": " {}%",
-        "interval": 1,
-        "on-scroll-up": "brightnessctl set 5%+",
-        "on-scroll-down": "brightnessctl set 5%-"
-    },
     "tray": {
         "icon-size": 21,
         "spacing": 10
@@ -149,11 +142,11 @@
     "backlight/slider": {
         "min": 0,
         "max": 100,
-        "orientation": "horizontal",
+        "orientation": "vertical",
         "device": "intel_backlight"
     },
     "backlight": {
-        "format": "{percent}% {icon}",
+        "format": "{icon} {percent}%",
         "format-icons": [
             "",
             ""

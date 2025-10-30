@@ -22,7 +22,7 @@
 window#waybar {
     /* Large size for shorter side padding*/
     /* border-radius: 100px */
-    background-color: transparent;
+    background-color: rgba(85, 181, 255, 0.595);
 }
 
 .modules-left {
@@ -42,6 +42,7 @@ window#waybar {
 #network,
 #pulseaudio,
 #backlight,
+#backlight-slider,
 #tray,
 #mode,
 #workspaces {
@@ -124,6 +125,7 @@ window#waybar {
 #memory,
 #pulseaudio,
 #backlight,
+#backlight-slider,
 #network {
     color: @base;
     border: 1px;
