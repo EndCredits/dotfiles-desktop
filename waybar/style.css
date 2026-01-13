@@ -22,7 +22,7 @@
 window#waybar {
     /* Large size for shorter side padding*/
     /* border-radius: 100px */
-    background-color: rgba(85, 181, 255, 0.595);
+    background-color: rgba(255, 235, 10, 0.595);
 }
 
 .modules-left {
