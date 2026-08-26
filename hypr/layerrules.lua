@@ -1,0 +1,2 @@
+-- TODO(hyprvalidate convert): 'layerrule' isn't a modeled top-level directive (hyprland.conf line 164)
+-- TODO(hyprvalidate convert): 'layerrule' isn't a modeled top-level directive (hyprland.conf line 165)

@@ -1,0 +1,7 @@
+hl.env("HYPRCURSOR_THEME", "GoogleDot-Blue")
+hl.env("HYPRCURSOR_SIZE", "28")
+hl.env("ELECTRON_OZONE_PLATFORM_HINT", "auto")
+hl.env("XMODIFIERS", "@im=fcitx")
+hl.env("QT4_IM_MODULE", "fcitx")
+hl.env("QT_IM_MODULE", "fcitx")
+hl.env("GTK_IM_MODULE", "fcitx")

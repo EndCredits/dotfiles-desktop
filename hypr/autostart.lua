@@ -1,0 +1,8 @@
+hl.on("hyprland.start", function()
+    hl.exec_cmd("dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP")
+    hl.exec_cmd("swaybg -i/home/endcredits/Pictures/arknights_2025_newyear.png -m fill")
+    hl.exec_cmd("waybar")
+    hl.exec_cmd("udiskie -a -n &")
+    hl.exec_cmd("fcitx5 --replace -d")
+    hl.exec_cmd("mako")
+end)
